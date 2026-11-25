@@ -487,7 +487,7 @@ def walk(who, p, **kw):
 # ---------------------------------------------------------------- whole figure
 def fig(d, who, x, gy, S, P, flip=False, seed=None):
     """draw one marching figure; P from walk() (any field may be overridden)"""
-    c = C[who]; seed = (hash(who) % 97 if seed is None else seed); seed = sum(map(ord, who)) if seed is None else seed
+    c = C[who]; seed = sum(map(ord, who)) if seed is None else seed
     S = S * c['k']; g = PERS[who]; n = N().at(x, gy, 0., S * (-1 if flip else 1), S)
     hx, hy = P['hip']; sq = P.get('sq', 0.); tl = g.get('tl', .86); k = .20 * math.sin(P.get('yaw', .5)) / .48
     hipn = n.at(hx, hy, P.get('lean', 0.), 1 + sq * .6, 1 - sq); t = hipn.at(0, -tl + .06)                    # torso node at the neck base

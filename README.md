@@ -1,7 +1,7 @@
 # GO (吾 / 悟)
 
 A 118-second anime fan film set in the world of *Dragon Ball*, drawn, animated, scored and sung entirely in code.
-1920×1080, 24 fps, 38 shots, 144 BPM.
+1920×1080, 24 fps, 41 shots, 144 BPM.
 
 吾 (read *go*) means "I". Put a heart (忄) beside it and it becomes 悟 (also *go*): to awaken, and the mark on Goku's chest.
 
@@ -65,5 +65,5 @@ One frame:
 | `db/letters*.py` | EGO / GO monument, manga page, brush and seal |
 | `db/ball.py` `nimbus.py` `glove.py` `rag.py` `props.py` `storm.py` | the glass ball, the cloud, hands, cloth, props, rain |
 | `chars/` | the characters |
-| `shots/` | the 38 shots |
+| `shots/` | the 41 shots |
 | `audio/` | score, singer, band, effects, mix |
